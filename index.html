@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Home Cleaning</title>
+    <meta
+      name="description"
+      content="Happy Home Cleaning — reliable home and move-out cleaning."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="Happy Home Cleaning Home">
+          <span class="brand-mark" aria-hidden="true">✨</span>
+          <span class="brand-text">Happy Home Cleaning</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+          Menu
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#reviews">Reviews</a>
+          <a class="btn btn-small" href="#quote">Get a Quote</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>Clean home, happy you.</h1>
+            <p class="lead">
+              Friendly, detail-oriented cleaning for apartments and houses. One-time, recurring, and move-out cleanings.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn" href="#quote">Get a Free Quote</a>
+              <a class="btn btn-ghost" href="#services">See Services</a>
+            </div>
+
+            <ul class="hero-badges" aria-label="Highlights">
+              <li>✅ Supplies included</li>
+              <li>✅ Flexible scheduling</li>
+              <li>✅ Satisfaction-first</li>
+            </ul>
+          </div>
+
+          <div class="hero-card" role="region" aria-label="Quick booking card">
+            <h2 class="card-title">Quick Quote</h2>
+            <p class="card-subtitle">We’ll reply fast.</p>
+
+            <form class="form" id="quickQuoteForm">
+              <label>
+                Name
+                <input name="name" type="text" placeholder="Your name" required />
+              </label>
+
+              <label>
+                Email
+                <input name="email" type="email" placeholder="you@example.com" required />
+              </label>
+
+              <label>
+                What do you need?
+                <select name="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option>Standard Cleaning</option>
+                  <option>Deep Cleaning</option>
+                  <option>Move-In / Move-Out</option>
+                  <option>Recurring (Weekly/Biweekly)</option>
+                </select>
+              </label>
+
+              <label>
+                Bedrooms / Bathrooms
+                <input name="size" type="text" placeholder="e.g., 2 bed / 1 bath" />
+              </label>
+
+              <button class="btn btn-full" type="submit">Request Quote</button>
+              <p class="form-note" id="formNote" aria-live="polite"></p>
+            </form>
+
+            <div class="card-divider"></div>
+
+            <p class="tiny">
+              Prefer texting?
+              <a href="#contact">Contact us</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <h2>Services</h2>
+          <p class="muted">Pick what fits your space and schedule.</p>
+
+          <div class="grid">
+            <article class="tile">
+              <h3>Standard Cleaning</h3>
+              <p>Great for regular upkeep: kitchen, bathrooms, floors, surfaces.</p>
+              <ul>
+                <li>Dust & wipe surfaces</li>
+                <li>Vacuum & mop</li>
+                <li>Bathroom sparkle</li>
+              </ul>
+            </article>
+
+            <article class="tile">
+              <h3>Deep Cleaning</h3>
+              <p>For a reset: extra detail work and hard-to-reach areas.</p>
+              <ul>
+                <li>Baseboards & edges</li>
+                <li>Inside appliances (optional)</li>
+                <li>Extra bathroom detail</li>
+              </ul>
+            </article>
+
+            <article class="tile">
+              <h3>Move-In / Move-Out</h3>
+              <p>Make a great first (or last) impression. Ideal for turnovers.</p>
+              <ul>
+                <li>Cabinets & drawers (inside)</li>
+                <li>Fridge/oven add-ons</li>
+                <li>Checklist-ready finish</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section alt">
+        <div class="container">
+          <h2>Simple Pricing</h2>
+          <p class="muted">Use these as starting points. Final quotes depend on size + condition.</p>
+
+          <div class="pricing">
+            <div class="price-card">
+              <h3>Apartment</h3>
+              <p class="price">$120+</p>
+              <p class="muted">1 bed / 1 bath</p>
+              <a class="btn btn-ghost btn-full" href="#quote">Get exact quote</a>
+            </div>
+
+            <div class="price-card featured">
+              <h3>Family Home</h3>
+              <p class="price">$180+</p>
+              <p class="muted">2–3 bed / 1–2 bath</p>
+              <a class="btn btn-full" href="#quote">Get exact quote</a>
+            </div>
+
+            <div class="price-card">
+              <h3>Move-Out</h3>
+              <p class="price">$240+</p>
+              <p class="muted">Deep + detail finish</p>
+              <a class="btn btn-ghost btn-full" href="#quote">Get exact quote</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="section">
+        <div class="container">
+          <h2>Reviews</h2>
+          <div class="grid">
+            <figure class="quote">
+              <blockquote>“Super thorough and very kind. Our place looked brand new.”</blockquote>
+              <figcaption>— A. Customer</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>“On time, professional, and the kitchen was spotless.”</blockquote>
+              <figcaption>— J. Customer</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>“Best move-out clean we’ve had. Would book again.”</blockquote>
+              <figcaption>— K. Customer</figcaption>
+            </figure>
+          </div>
+          <p class="tiny muted">Tip: replace these with real reviews once you have them.</p>
+        </div>
+      </section>
+
+      <section id="quote" class="section alt">
+        <div class="container">
+          <h2>Get a Quote</h2>
+          <p class="muted">Tell us a bit about your place. We’ll get back to you quickly.</p>
+
+          <form class="big-form" id="quoteForm">
+            <div class="two-col">
+              <label>
+                Name
+                <input name="name" type="text" required />
+              </label>
+              <label>
+                Email
+                <input name="email" type="email" required />
+              </label>
+            </div>
+
+            <div class="two-col">
+              <label>
+                Phone (optional)
+                <input name="phone" type="tel" />
+              </label>
+              <label>
+                City (optional)
+                <input name="city" type="text" placeholder="e.g., Burnaby" />
+              </label>
+            </div>
+
+            <label>
+              Service
+              <select name="service" required>
+                <option value="" selected disabled>Select a service</option>
+                <option>Standard Cleaning</option>
+                <option>Deep Cleaning</option>
+                <option>Move-In / Move-Out</option>
+                <option>Recurring (Weekly/Biweekly)</option>
+              </select>
+            </label>
+
+            <label>
+              Details
+              <textarea
+                name="details"
+                rows="5"
+                placeholder="Bedrooms/bathrooms, pets, special requests, preferred dates…"
+              ></textarea>
+            </label>
+
+            <button class="btn" type="submit">Send Request</button>
+            <p class="form-note" id="quoteNote" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container footer">
+          <div>
+            <h2>Contact</h2>
+            <p class="muted">
+              Add your real contact info here.
+            </p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> hello@happyhomecleaning.com</li>
+              <li><strong>Phone:</strong> (555) 123-4567</li>
+              <li><strong>Hours:</strong> Mon–Sat</li>
+            </ul>
+          </div>
+
+          <div class="mini">
+            <h3>Service Area</h3>
+            <p class="muted">Add neighborhoods/cities you serve.</p>
+
+            <h3>Follow</h3>
+            <p class="muted">Add Instagram / Facebook links.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom">
+      <div class="container bottom-row">
+        <span>© <span id="year"></span> Happy Home Cleaning</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
