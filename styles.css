@@ -289,8 +289,8 @@ h3 {
 }
 
 .price-card.featured {
-  border-color: rgba(56, 189, 248, 0.35);
-  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.14), var(--shadow-soft);
+  border-color: #87c2c6;
+  box-shadow: 0 0 0 3px rgba(57, 163, 171, 0.25), var(--shadow-soft);
 }
 
 /* Quotes */
