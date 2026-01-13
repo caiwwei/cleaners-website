@@ -90,7 +90,14 @@
                 <input name="size" type="text" placeholder="e.g., 2 bed / 1 bath" />
               </label>
 
-              <button class="btn btn-full" type="submit">Request Quote</button>
+              <button
+                class="btn btn-full"
+                type="button"
+                id="quickQuoteBtn"
+              >
+                Request Quote
+              </button>
+
               <p class="form-note" id="formNote" aria-live="polite"></p>
             </form>
 
@@ -199,7 +206,16 @@
           <h2>Get a Quote</h2>
           <p class="muted">Tell us a bit about your place. We’ll get back to you quickly.</p>
 
-          <form class="big-form" id="quoteForm">
+          <form
+            class="big-form"
+            id="quoteForm"
+            action="https://formspree.io/f/xdaaowzd"
+            method="POST"
+          >
+
+            <input type="hidden" name="_subject" value="New Happy Home Cleaning Quote" />
+            <input type="hidden" name="_template" value="table" />
+
             <div class="two-col">
               <label>
                 Name

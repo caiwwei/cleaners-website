@@ -374,7 +374,7 @@ input:focus,
 select:focus,
 textarea:focus {
   border-color: rgba(47, 137, 144, 0.8);
-  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.18);
+  box-shadow: 0 0 0 3px rgba(52, 132, 137, 0.18);
 }
 
 .form {
